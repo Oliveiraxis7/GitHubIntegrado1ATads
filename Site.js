@@ -2,3 +2,4 @@
 document.getElementById("play").addEventListener("click", function() {
     alert("MOJANG E MEU OVUUUUU");
 });
+
