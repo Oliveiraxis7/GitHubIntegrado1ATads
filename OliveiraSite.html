@@ -1,30 +1,55 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Minecraft - So não e o da Mojang
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-        }
-
-        header {
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            background-color: #333;
-            color: #fff;
-            padding: 10px;
-        }
-
-        header a {
-            display: inline-block;
-            margin: 0 10px;
-            padding: 10px 20px;
-            background-color: transparent;
-            color: #fff;
-            text-decoration: none;
-            border: 2px solid #008000; /* Borda verde */
-            border-radius: 5px;
-        }
+    <title>Minecraft Mas não o da Mojang</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link para o CSS -->
+</head>
+<body>
+    <header>
+        <h1>Minecraft Mas não o da Mojang</h1>
+    </header>
+    <nav>
+        <button>Home</button>
+        <button>Sobre</button>
+        <button>Galeria</button>
+        <button>Contato</button>
+        <button id="play">Jogar</button>
+    </nav>
+    <section id="auth-section">
+        <button onclick="openRegister()">Registrar</button>
+        <button onclick="openLogin()">Login</button>
+    </section>
+    <div id="register-modal">
+        <h3>Registrar</h3>
+        <input type="email" id="register-email" placeholder="Digite seu e-mail">
+        <input type="password" id="register-password" placeholder="Digite sua senha">
+        <button onclick="register()">Registrar</button>
+        <button onclick="closeModal('register-modal')">Fechar</button>
+    </div>
+    <div id="login-modal">
+        <h3>Login</h3>
+        <input type="email" id="login-email" placeholder="Digite seu e-mail">
+        <input type="password" id="login-password" placeholder="Digite sua senha">
+        <button onclick="login()">Entrar</button>
+        <button onclick="closeModal('login-modal')">Fechar</button>
+    </div>
+    <section id="gif-section">
+        <img src="gif-do-jogo.gif" alt="Gif do jogo"> <!-- Substitua pelo gif real -->
+    </section>
+    <section id="about">
+        <h2>Sobre o Jogo</h2>
+        <p>Um mundo de exploração? Não — um mundo 2D, onde você deve enfrentar os desafios da vida de Steve para chegar em casa com vida.</p>
+    </section>
+    <footer>
+        <p>Desenvolvido por Gabriel Oliveira</p>
+        <div class="social-buttons">
+            <img src="facebook-icon.png" alt="Facebook">
+            <img src="twitter-icon.png" alt="Twitter">
+            <img src="instagram-icon.png" alt="Instagram">
+        </div>
+    </footer>
+    <script src="script.js"></script> <!-- Link para o JS -->
+</body>
+</html>
