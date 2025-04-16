@@ -79,7 +79,7 @@ footer {
     padding: 5px; 
     background-color: #fff; /* Fundo branco atrás da imagem */
     border-radius: 5px; /* Bordas arredondadas para o fundo */
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3); /* Sombra discreta */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
 }
 
 .social-buttons img {
