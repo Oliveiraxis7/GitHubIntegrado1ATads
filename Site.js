@@ -15,7 +15,13 @@ document.querySelectorAll(".navbar a").forEach(function(link) {
     });
 });
 
-// Função para alertar ao clicar no botão "Jogar"
+// Função para abrir o jogo ao clicar no botão "Jogar"
 document.getElementById("play").addEventListener("click", function() {
-    alert("MOJANG E MEU OVUUUUUO");
+    // Abre o arquivo principal do jogo exportado em uma nova aba
+    window.open('./MeuSite/jogo.html', '_blank');
+});
+
+// Exemplo de alerta (mantido como exemplo de interação divertida)
+document.getElementById("play").addEventListener("mouseover", function() {
+    console.log("Preparado para jogar?");
 });
