@@ -2,7 +2,7 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-image: url('a/BentoHero_4x_Vanilla_1920x1080.jpg'); /* Substitua pelo nome e caminho do arquivo */
+    background-image: url('a/BentoHero_4x_Vanilla_1920x1080.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -44,25 +44,15 @@ header {
     border-radius: 5px;
 }
 
-/* Seção de imagem */
-#image-section img {
-    width: 100%;
-    height: auto;
-    max-width: 500px;
-    display: block;
-    margin: 0 auto;
-    border: 5px solid #008000; /* Borda verde */
-    border-radius: 10px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); /* Sombra */
-}
-
-/* Sobre */
-#about {
-    text-align: center;
+/* Balões de texto */
+.balloon {
+    width: 80%; /* Define o tamanho dos balões */
+    margin: 20px auto; /* Centraliza os balões */
     padding: 20px;
-    background-color: rgba(0, 0, 0, 0.7);
-    color: #fff;
-    margin: 20px;
+    background-color: rgba(255, 255, 255, 0.9); /* Fundo branco com leve transparência */
+    border-radius: 15px; /* Bordas arredondadas */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); /* Adiciona sombra */
+    text-align: center; /* Centraliza o texto dentro dos balões */
 }
 
 /* Botão "Jogar" */
