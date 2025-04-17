@@ -2,13 +2,13 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-image: url('a/BentoHero_4x_Vanilla_1920x1080.jpg'); /* Certifique-se de que o caminho está correto */
+    background-image: url('a/BentoHero_4x_Vanilla_1920x1080.jpg'); /* Certifique-se do caminho correto */
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
     display: flex;
     flex-direction: column; /* Organiza o layout como coluna */
-    min-height: 100vh; /* Garante altura mínima para preencher a tela */
+    min-height: 100vh; /* Preenche a altura mínima */
 }
 
 /* Cabeçalho */
@@ -21,48 +21,78 @@ header {
 
 /* Barra de navegação */
 .navbar {
-    list-style: none; /* Remove os pontos das listas */
+    list-style: none; /* Remove marcadores de lista */
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: center; /* Alinha os links horizontalmente */
-    background-color: rgba(0, 0, 0, 0.8);
-    border-bottom: 2px solid #008000; /* Linha verde abaixo da barra */
+    justify-content: center; /* Alinha os itens horizontalmente */
+    background-color: rgba(0, 0, 0, 0.8); /* Fundo da barra */
+    border-bottom: 2px solid #008000; /* Linha verde */
 }
 
 .navbar li {
-    margin: 0 15px; /* Espaçamento horizontal entre os itens */
+    margin: 0 15px; /* Espaçamento horizontal entre itens */
 }
 
 .navbar a {
-    text-decoration: none; /* Remove sublinhado dos links */
+    text-decoration: none; /* Remove sublinhado */
     color: #fff; /* Texto branco */
     font-size: 18px; /* Tamanho do texto */
-    padding: 10px 15px; /* Espaçamento interno nos links */
-    transition: background-color 0.3s ease-in-out; /* Efeito suave ao passar o mouse */
+    padding: 10px 15px; /* Espaçamento interno */
+    transition: background-color 0.3s ease-in-out; /* Efeito suave */
 }
 
 .navbar a:hover {
-    background-color: #008000; /* Cor do fundo ao passar o mouse */
-    border-radius: 5px; /* Bordas arredondadas nos links */
+    background-color: #008000; /* Fundo ao passar o mouse */
+    border-radius: 5px; /* Bordas arredondadas */
+}
+
+/* Botão pulsante "Jogar" na barra de navegação */
+.play-button {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    padding: 10px 15px;
+    background-color: #008000; /* Fundo verde */
+    border-radius: 5px; /* Bordas arredondadas */
+    animation: pulse 1s infinite; /* Animação pulsante */
+    border: 2px solid #006400; /* Borda verde escuro */
+    transition: background-color 0.3s ease-in-out;
+}
+
+.play-button:hover {
+    background-color: #006400; /* Fundo mais escuro ao passar o mouse */
+}
+
+/* Animação pulsante */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1); /* Aumenta ligeiramente */
+    }
+    100% {
+        transform: scale(1);
+    }
 }
 
 /* Balões verdes */
 .balloon.green {
-    width: 80%; /* Define a largura dos balões */
-    margin: 20px auto; /* Centraliza os balões horizontalmente */
+    width: 80%; /* Largura */
+    margin: 20px auto; /* Centraliza */
     padding: 20px;
-    background-color: rgba(0, 128, 0, 0.9); /* Fundo verde com leve transparência */
-    border-radius: 15px; /* Bordas arredondadas nos balões */
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); /* Adiciona sombra */
-    text-align: center; /* Centraliza o texto dentro dos balões */
+    background-color: rgba(0, 128, 0, 0.9); /* Fundo verde */
+    border-radius: 15px; /* Bordas arredondadas */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); /* Sombra */
+    text-align: center; /* Centraliza texto */
     color: #fff; /* Texto branco */
 }
 
-/* Iframe do jogo */
+/* Contêiner do iframe */
 .game-frame {
     width: 80%;
-    margin: 20px auto; /* Espaçamento entre o balão e o iframe */
+    margin: 20px auto; /* Centraliza */
     padding: 20px;
     background-color: rgba(0, 128, 0, 0.9); /* Fundo verde */
     border-radius: 15px; /* Bordas arredondadas */
@@ -71,18 +101,18 @@ header {
 }
 
 iframe {
-    width: 100%; /* Largura do iframe */
-    height: 500px; /* Altura do iframe */
-    border: none; /* Remove a borda do iframe */
-    border-radius: 10px; /* Bordas arredondadas do iframe */
+    width: 100%; /* Largura total */
+    height: 500px; /* Altura fixa */
+    border: none; /* Remove bordas */
+    border-radius: 10px; /* Bordas arredondadas */
 }
 
 /* Formulário de contato */
 .contact-form {
     display: flex;
-    flex-direction: column; /* Alinha os elementos verticalmente */
-    max-width: 400px; /* Define largura máxima do formulário */
-    margin: 20px auto; /* Centraliza o formulário na página */
+    flex-direction: column; /* Alinha os itens verticalmente */
+    max-width: 400px; /* Define largura máxima */
+    margin: 20px auto; /* Centraliza o formulário */
 }
 
 .contact-form label {
@@ -93,10 +123,10 @@ iframe {
 
 .contact-form input,
 .contact-form textarea {
-    width: 100%;
+    width: 100%; /* Largura total */
     padding: 10px;
     margin-bottom: 15px;
-    border-radius: 5px; /* Bordas arredondadas dos campos */
+    border-radius: 5px; /* Bordas arredondadas */
     border: 1px solid #008000; /* Borda verde */
 }
 
@@ -106,12 +136,12 @@ iframe {
     color: #fff; /* Texto branco */
     border: none; /* Remove borda */
     border-radius: 5px; /* Bordas arredondadas */
-    cursor: pointer; /* Mostra o cursor ao passar o mouse */
-    transition: background-color 0.3s ease-in-out; /* Efeito suave ao passar o mouse */
+    cursor: pointer; /* Mostra o cursor */
+    transition: background-color 0.3s ease-in-out; /* Efeito suave */
 }
 
 .contact-form button:hover {
-    background-color: #006400; /* Fundo verde mais escuro */
+    background-color: #006400; /* Fundo mais escuro ao passar o mouse */
 }
 
 /* Botões de redes sociais */
@@ -122,9 +152,9 @@ iframe {
 
 .social-group {
     display: flex;
-    justify-content: space-evenly; /* Espaçamento igual entre os itens */
-    max-width: 600px; /* Largura máxima do grupo de logos */
-    margin: 0 auto;
+    justify-content: space-evenly; /* Espaçamento uniforme */
+    max-width: 600px; /* Largura máxima */
+    margin: 0 auto; /* Centraliza */
 }
 
 .social-group a {
@@ -136,11 +166,11 @@ iframe {
 }
 
 .social-group img {
-    width: 50px; /* Tamanho menor para os logos */
-    height: auto; /* Mantém proporção das imagens */
+    width: 50px; /* Tamanho das imagens */
+    height: auto; /* Mantém proporção */
 }
 
-/* Rodapé fixo na parte inferior */
+/* Rodapé fixo */
 footer {
     text-align: center;
     padding: 10px;

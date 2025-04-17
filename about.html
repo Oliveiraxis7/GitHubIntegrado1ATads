@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jogar</title>
+    <title>Sobre o Jogo</title>
     <link rel="stylesheet" href="SiteOliveira.css">
-    <link rel="icon" href="a/favicon.ico" type="image/x-icon"> <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon"> <!-- Favicon -->
 </head>
 <body>
     <header>
@@ -13,11 +13,12 @@
             <ul class="navbar">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="history.html">História</a></li>
-                <li><a href="about.html">Jogar</a></li>
+                <li><a href="about.html">Sobre</a></li>
                 <li><a href="contact.html">Contato</a></li>
+                <li><a href="ColombiaGold/jogo.html" target="_blank" class="play-button">Jogar</a></li> <!-- Botão pulsante -->
             </ul>
         </nav>
-        <h1>Jogar</h1>
+        <h1>Sobre o Jogo</h1>
     </header>
 
     <main>
@@ -26,10 +27,11 @@
             <p>Um mundo de exploração? Não — um mundo 2D, onde você deve enfrentar os desafios da vida de Steve.</p>
         </section>
 
-        <!-- Jogo embutido em iframe -->
-        <div class="game-frame balloon green">
-            <iframe src="./ColombiaGold/jogo.html" title="Meu Jogo" width="100%" height="500px" style="border:none; border-radius: 10px;"></iframe>
-        </div>
+        <!-- Jogo embutido via iframe -->
+        <section class="game-frame">
+            <h2>Jogo Embutido</h2>
+            <iframe src="ColombiaGold/jogo.html" title="Meu Jogo" width="100%" height="500px" style="border:none; border-radius: 10px;"></iframe>
+        </section>
     </main>
 
     <footer>
