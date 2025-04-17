@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jogar</title>
     <link rel="stylesheet" href="SiteOliveira.css">
-    <link rel="icon" href="favicon.ico" type="image/x-icon"> <!-- Favicon -->
+    <link rel="icon" href="a/favicon.ico" type="image/x-icon"> <!-- Favicon -->
 </head>
 <body>
     <header>
@@ -24,9 +24,12 @@
         <section class="balloon green">
             <h2>Sobre o Jogo</h2>
             <p>Um mundo de exploração? Não — um mundo 2D, onde você deve enfrentar os desafios da vida de Steve.</p>
-            <!-- Botão Jogar -->
-            <button id="play" onclick="window.open('./MeuSite/jogo.html', '_blank')">Jogar</button>
         </section>
+
+        <!-- Jogo embutido em iframe -->
+        <div class="game-frame balloon green">
+            <iframe src="./ColombiaGold/jogo.html" title="Meu Jogo" width="100%" height="500px" style="border:none; border-radius: 10px;"></iframe>
+        </div>
     </main>
 
     <footer>
