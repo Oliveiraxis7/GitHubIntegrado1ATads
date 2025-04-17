@@ -2,75 +2,74 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-image: url('a/BentoHero_4x_Vanilla_1920x1080.jpg'); /* Certifique-se do caminho correto */
+    background-image: url('a/BentoHero_4x_Vanilla_1920x1080.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
     display: flex;
-    flex-direction: column; /* Organiza o layout como coluna */
-    min-height: 100vh; /* Preenche a altura mínima */
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 /* Cabeçalho */
 header {
     text-align: center;
     padding: 20px;
-    background-color: rgba(0, 0, 0, 0.8); /* Fundo semitransparente */
-    color: #fff; /* Texto branco */
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
 }
 
 /* Barra de navegação */
 .navbar {
-    list-style: none; /* Remove marcadores de lista */
+    list-style: none;
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: center; /* Alinha os itens horizontalmente */
-    background-color: rgba(0, 0, 0, 0.8); /* Fundo da barra */
-    border-bottom: 2px solid #008000; /* Linha verde */
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-bottom: 2px solid #008000;
 }
 
 .navbar li {
-    margin: 0 15px; /* Espaçamento horizontal entre itens */
+    margin: 0 15px;
 }
 
 .navbar a {
-    text-decoration: none; /* Remove sublinhado */
-    color: #fff; /* Texto branco */
-    font-size: 18px; /* Tamanho do texto */
-    padding: 10px 15px; /* Espaçamento interno */
-    transition: background-color 0.3s ease-in-out; /* Efeito suave */
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    padding: 10px 15px;
+    transition: background-color 0.3s ease-in-out;
 }
 
 .navbar a:hover {
-    background-color: #008000; /* Fundo ao passar o mouse */
-    border-radius: 5px; /* Bordas arredondadas */
+    background-color: #008000;
+    border-radius: 5px;
 }
 
-/* Botão pulsante "Jogar" na barra de navegação */
+/* Botão pulsante "Jogar" */
 .play-button {
     text-decoration: none;
     color: #fff;
     font-size: 18px;
     padding: 10px 15px;
-    background-color: #008000; /* Fundo verde */
-    border-radius: 5px; /* Bordas arredondadas */
-    animation: pulse 1s infinite; /* Animação pulsante */
-    border: 2px solid #006400; /* Borda verde escuro */
+    background-color: #008000;
+    border-radius: 5px;
+    animation: pulse 1s infinite;
+    border: 2px solid #006400;
     transition: background-color 0.3s ease-in-out;
 }
 
 .play-button:hover {
-    background-color: #006400; /* Fundo mais escuro ao passar o mouse */
+    background-color: #006400;
 }
 
-/* Animação pulsante */
 @keyframes pulse {
     0% {
         transform: scale(1);
     }
     50% {
-        transform: scale(1.1); /* Aumenta ligeiramente */
+        transform: scale(1.1);
     }
     100% {
         transform: scale(1);
@@ -79,102 +78,81 @@ header {
 
 /* Balões verdes */
 .balloon.green {
-    width: 80%; /* Largura */
-    margin: 20px auto; /* Centraliza */
-    padding: 20px;
-    background-color: rgba(0, 128, 0, 0.9); /* Fundo verde */
-    border-radius: 15px; /* Bordas arredondadas */
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); /* Sombra */
-    text-align: center; /* Centraliza texto */
-    color: #fff; /* Texto branco */
-}
-
-/* Contêiner do iframe */
-.game-frame {
     width: 80%;
-    margin: 20px auto; /* Centraliza */
+    margin: 20px auto;
     padding: 20px;
-    background-color: rgba(0, 128, 0, 0.9); /* Fundo verde */
-    border-radius: 15px; /* Bordas arredondadas */
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); /* Sombra */
+    background-color: rgba(0, 128, 0, 0.9);
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
     text-align: center;
-}
-
-iframe {
-    width: 100%; /* Largura total */
-    height: 500px; /* Altura fixa */
-    border: none; /* Remove bordas */
-    border-radius: 10px; /* Bordas arredondadas */
+    color: #fff;
 }
 
 /* Formulário de contato */
 .contact-form {
     display: flex;
-    flex-direction: column; /* Alinha os itens verticalmente */
-    max-width: 400px; /* Define largura máxima */
-    margin: 20px auto; /* Centraliza o formulário */
+    flex-direction: column;
+    max-width: 400px;
+    margin: 20px auto;
 }
 
 .contact-form label {
     font-weight: bold;
     margin-bottom: 5px;
-    color: #fff; /* Texto branco */
+    color: #fff;
 }
 
 .contact-form input,
 .contact-form textarea {
-    width: 100%; /* Largura total */
+    width: 100%;
     padding: 10px;
     margin-bottom: 15px;
-    border-radius: 5px; /* Bordas arredondadas */
-    border: 1px solid #008000; /* Borda verde */
+    border-radius: 5px;
+    border: 1px solid #008000;
 }
 
 .contact-form button {
     padding: 10px 20px;
-    background-color: #008000; /* Fundo verde */
-    color: #fff; /* Texto branco */
-    border: none; /* Remove borda */
-    border-radius: 5px; /* Bordas arredondadas */
-    cursor: pointer; /* Mostra o cursor */
-    transition: background-color 0.3s ease-in-out; /* Efeito suave */
+    background-color: #008000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
 }
 
 .contact-form button:hover {
-    background-color: #006400; /* Fundo mais escuro ao passar o mouse */
+    background-color: #006400;
 }
 
-/* Botões de redes sociais */
-.social-buttons {
-    text-align: center;
-    margin: 20px auto;
-}
-
-.social-group {
-    display: flex;
-    justify-content: space-evenly; /* Espaçamento uniforme */
-    max-width: 600px; /* Largura máxima */
-    margin: 0 auto; /* Centraliza */
-}
-
-.social-group a {
-    display: inline-block;
-    background-color: #fff; /* Fundo branco */
-    border-radius: 5px; /* Bordas arredondadas */
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3); /* Sombra */
-    padding: 10px;
-}
-
-.social-group img {
-    width: 50px; /* Tamanho das imagens */
-    height: auto; /* Mantém proporção */
-}
-
-/* Rodapé fixo */
+/* Ícones de redes sociais no rodapé */
 footer {
     text-align: center;
     padding: 10px;
-    background-color: rgba(0, 0, 0, 0.8); /* Fundo semitransparente */
-    color: #fff; /* Texto branco */
-    margin-top: auto; /* Empurra o rodapé para baixo */
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    margin-top: auto;
+}
+
+footer .social-icons {
+    margin-top: 10px;
+}
+
+footer .social-icons a {
+    display: inline-block;
+    margin: 0 5px;
+    width: 25px;
+    height: 25px;
+}
+
+footer .social-icons img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+footer .social-icons img:hover {
+    transform: scale(1.2);
 }
