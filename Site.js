@@ -1,19 +1,21 @@
-// Função para alertar ao clicar no botão "Jogar"
-document.getElementById("play").addEventListener("click", function() {
-    alert("MOJANG E MEU OVUUUUUO");
-});
-
-// Função para rolar suavemente para as seções ao clicar nos botões da barra de navegação
+// Função para gerenciar navegação entre páginas
 document.querySelectorAll(".navbar a").forEach(function(link) {
     link.addEventListener("click", function(event) {
         event.preventDefault(); // Evita o comportamento padrão do clique
-        const targetId = this.getAttribute("href").substring(1); // Obtém o ID do destino
-        const targetElement = document.getElementById(targetId); // Localiza o elemento alvo
-        
-        // Rola suavemente para a seção desejada
-        targetElement.scrollIntoView({
-            behavior: "smooth",
-            block: "start"
-        });
+        const targetHref = this.getAttribute("href"); // Obtém o endereço do destino
+        const currentHref = window.location.href; // Obtém o endereço atual da página
+
+        if (currentHref.includes(targetHref)) {
+            // Se o botão clicado levar à mesma página, recarrega a página
+            window.location.reload();
+        } else {
+            // Caso contrário, navega para a nova página
+            window.location.href = targetHref;
+        }
     });
+});
+
+// Função para alertar ao clicar no botão "Jogar"
+document.getElementById("play").addEventListener("click", function() {
+    alert("MOJANG E MEU OVUUUUUO");
 });

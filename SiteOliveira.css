@@ -6,6 +6,9 @@ body {
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+    display: flex;
+    flex-direction: column; /* Organiza o layout como coluna */
+    min-height: 100vh; /* Garante altura mínima para preencher a tela */
 }
 
 /* Cabeçalho */
@@ -36,7 +39,7 @@ header {
     color: #fff;
     font-size: 18px;
     padding: 10px 15px;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s ease-in-out;
 }
 
 .navbar a:hover {
@@ -44,15 +47,29 @@ header {
     border-radius: 5px;
 }
 
-/* Balões de texto */
-.balloon {
-    width: 80%; /* Define o tamanho dos balões */
-    margin: 20px auto; /* Centraliza os balões */
+/* Balões verdes */
+.balloon.green {
+    width: 80%;
+    margin: 20px auto;
     padding: 20px;
-    background-color: rgba(255, 255, 255, 0.9); /* Fundo branco com leve transparência */
-    border-radius: 15px; /* Bordas arredondadas */
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); /* Adiciona sombra */
-    text-align: center; /* Centraliza o texto dentro dos balões */
+    background-color: rgba(0, 128, 0, 0.9); /* Fundo verde */
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); /* Sombra */
+    text-align: center; /* Centraliza o texto */
+    color: #fff; /* Texto branco */
+}
+
+/* Seção de imagem abaixo dos balões */
+.image-section {
+    text-align: center;
+    margin: 20px auto; /* Espaçamento entre os balões e as imagens */
+}
+
+.image-section img {
+    width: 100%;
+    max-width: 500px; /* Limita o tamanho máximo da imagem */
+    border-radius: 10px; /* Bordas arredondadas para as imagens */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); /* Sombra */
 }
 
 /* Botão "Jogar" */
@@ -61,9 +78,9 @@ header {
     margin: 20px auto;
     padding: 10px 20px;
     font-size: 20px;
-    background-color: #008000;
-    color: #fff;
-    border: none;
+    background-color: #fff;
+    color: #008000; /* Texto verde */
+    border: 2px solid #008000; /* Borda verde */
     border-radius: 5px;
     animation: pulse 1s infinite;
     cursor: pointer;
@@ -82,25 +99,74 @@ header {
     }
 }
 
-/* Rodapé */
+/* Botões de redes sociais */
+.social-buttons {
+    text-align: center;
+    margin: 20px auto;
+}
+
+.social-group {
+    display: flex;
+    justify-content: space-evenly; /* Espaçamento entre os itens */
+    max-width: 600px; /* Largura máxima para o grupo de logos */
+    margin: 0 auto;
+}
+
+.social-group a {
+    display: inline-block;
+    background-color: #fff; /* Fundo branco atrás da imagem */
+    border-radius: 5px; /* Bordas arredondadas */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3); /* Sombra para dar destaque */
+    padding: 10px; /* Adiciona espaço interno */
+}
+
+.social-group img {
+    width: 50px; /* Define tamanho menor para os logos */
+    height: auto; /* Mantém proporção da imagem */
+}
+
+/* Formulário de contato */
+.contact-form {
+    display: flex;
+    flex-direction: column; /* Alinha os elementos verticalmente */
+    max-width: 400px; /* Define largura máxima do formulário */
+    margin: 20px auto; /* Centraliza o formulário na página */
+}
+
+.contact-form label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #fff; /* Texto branco */
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #008000; /* Borda verde */
+}
+
+.contact-form button {
+    padding: 10px 20px;
+    background-color: #008000; /* Fundo verde */
+    color: #fff; /* Texto branco */
+    border: none; /* Remove borda */
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.contact-form button:hover {
+    background-color: #006400; /* Fundo verde escuro ao passar o mouse */
+}
+
+/* Rodapé fixo na parte inferior */
 footer {
     text-align: center;
     padding: 10px;
     background-color: rgba(0, 0, 0, 0.8);
     color: #fff;
-}
-
-/* Botões de redes sociais */
-.social-buttons a {
-    display: inline-block;
-    margin: 0 10px;
-    padding: 5px;
-    background-color: #fff;
-    border-radius: 5px;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
-}
-
-.social-buttons img {
-    width: 30px;
-    height: 30px;
+    margin-top: auto; /* Garante que o rodapé seja empurrado para baixo */
 }
