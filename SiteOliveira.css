@@ -1,4 +1,4 @@
-/*corpo do site */
+/* Corpo do site */
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -8,7 +8,7 @@ body {
     background-attachment: fixed;
 }
 
-
+/* Cabeçalho */
 header {
     text-align: center;
     padding: 20px;
@@ -16,7 +16,35 @@ header {
     color: #fff;
 }
 
-/* Estilo para a seção de imagem */
+/* Barra de navegação */
+.navbar {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-bottom: 2px solid #008000;
+}
+
+.navbar li {
+    margin: 0 15px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    padding: 10px 15px;
+    transition: background-color 0.3s;
+}
+
+.navbar a:hover {
+    background-color: #008000;
+    border-radius: 5px;
+}
+
+/* Seção de imagem */
 #image-section img {
     width: 100%;
     height: auto;
@@ -24,11 +52,11 @@ header {
     display: block;
     margin: 0 auto;
     border: 5px solid #008000; /* Borda verde */
-    border-radius: 10px; /* Bordas arredondadas */
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); /* Sombra para dar destaque */
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); /* Sombra */
 }
 
-
+/* Sobre */
 #about {
     text-align: center;
     padding: 20px;
@@ -37,34 +65,34 @@ header {
     margin: 20px;
 }
 
-/* "Jogar" */
+/* Botão "Jogar" */
 #play {
     display: inline-block;
     margin: 20px auto;
     padding: 10px 20px;
     font-size: 20px;
-    background-color: #008000; /* Fundo verde */
-    color: #fff; /* Texto branco */
-    border: none; /* Sem borda */
-    border-radius: 5px; /* Bordas arredondadas */
-    animation: pulse 1s infinite; /* Efeito pulsante */
-    cursor: pointer; /* Alterar cursor ao passar o mouse */
+    background-color: #008000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    animation: pulse 1s infinite;
+    cursor: pointer;
 }
 
-/* Animação para o efeito pulsante */
+/* Animação pulsante */
 @keyframes pulse {
     0% {
-        transform: scale(1); /* Tamanho original */
+        transform: scale(1);
     }
     50% {
-        transform: scale(1.1); /* Crescimento */
+        transform: scale(1.1);
     }
     100% {
-        transform: scale(1); /* Volta ao tamanho original */
+        transform: scale(1);
     }
 }
 
-
+/* Rodapé */
 footer {
     text-align: center;
     padding: 10px;
@@ -72,13 +100,13 @@ footer {
     color: #fff;
 }
 
-
+/* Botões de redes sociais */
 .social-buttons a {
     display: inline-block;
     margin: 0 10px;
-    padding: 5px; 
-    background-color: #fff; /* Fundo branco atrás da imagem */
-    border-radius: 5px; /* Bordas arredondadas para o fundo */
+    padding: 5px;
+    background-color: #fff;
+    border-radius: 5px;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
 }
 
